@@ -36,9 +36,6 @@ export default class Content extends Component {
   filterCards = () => {
       if (this.state.selected === "all") {
         return cardData;
-        // this.setState ({
-        //   cards: cardData
-        // })
       } else {
         return cardData.filter((card) => {
           return card.tab.includes(this.state.selected)

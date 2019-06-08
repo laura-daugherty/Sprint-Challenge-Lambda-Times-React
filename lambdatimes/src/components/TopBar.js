@@ -24,13 +24,12 @@ const TopBarContainer = styled.div`
   color: #fff;
   letter-spacing: 1px;
   padding: 0 10px;
+  @media (min-width: 1280px) {
+    width: 1280px;
+  } 
 `
 
-// @media (min-width: 1280px) {
-//   .top-bar .container {
-//     width: 1280px;
-//   }
-// }
+
 
 const TopBarContainerLeft = styled.div `
   display: flex;
@@ -104,7 +103,9 @@ const TopBar = () => {
           </TopBarContainerCenterSpanLast>
         </TopBarContainerCenter>
         <TopBarContainerRight>
-        <span>LOG IN</span>
+          <TopBarContainerRightSpan>
+            LOG IN
+          </TopBarContainerRightSpan>
         </TopBarContainerRight>
       </TopBarContainer>
     </TopBarMain>  )
